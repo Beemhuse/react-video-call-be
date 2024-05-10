@@ -18,10 +18,10 @@ const server = http.createServer(app);
 socket(server);
 
 
-app.get('/socket', (req, res) => {
-  // Your API logic here
-  res.json({ message: 'API data' });
-});
+// app.get('/socket', (req, res) => {
+//   // Your API logic here
+//   res.json({ message: 'API data' });
+// });
 server.listen(config.PORT, () => {
   socket(server)
   console.log('Server is listening at :', config.PORT);
