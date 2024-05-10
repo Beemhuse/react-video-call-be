@@ -8,14 +8,14 @@ const app = express();
 
 app.use(cors()); // Use the cors middleware
 
-app.use(cors({
-  origin: '*' // Allow requests only from http://example.com
-}));
 
 const server = http.createServer(app);
 
 
 socket(server);
+app.use(cors({
+  origin: '*' // Allow requests only from http://example.com
+}));
 
 
 // app.get('/socket', (req, res) => {
