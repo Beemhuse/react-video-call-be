@@ -19,10 +19,10 @@ const express = require('express');
 const http = require('http');
 const socketServer = require('./lib/socket'); // Assuming this is the file containing your socket server setup
 const config = require('./config'); // Your server configuration
-
+const cors = require ('cors')
 // Create an Express app
 const app = express();
-
+app.use(cors())
 // Configure any middleware, routes, etc. for your Express app
 // For example:
 // app.use(express.json());
