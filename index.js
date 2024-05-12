@@ -1,10 +1,9 @@
 const http = require('http');
-// const config = require('./config');
 const socket = require('./lib/socket');
 
+const app = require('express');
 
-
-const server = http.createServer();
+const server = http.createServer(app);
 
 
 socket(server);
