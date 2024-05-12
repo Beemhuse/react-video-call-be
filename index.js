@@ -4,7 +4,7 @@ const socket = require('./lib/socket');
 
 
 
-const server = http.createServer(app);
+const server = http.createServer();
 
 
 socket(server);
